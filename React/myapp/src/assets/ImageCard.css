@@ -1,0 +1,42 @@
+/* ImgCard.css */
+
+.custom-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    padding: 20px;
+    /* Occupy 25% of the width for 4 cards in a row *
+    /* Display inline so they appear in a row */
+    text-align: center;
+    box-sizing: border-box;
+    /* Added for consistent sizing */
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    border-radius: 10px 10px 0 0;
+    object-fit: contain;
+    height: 120px;
+    /* Adjust the height of the card image */
+    width: 100%;
+    /* Make sure the image fills the entire width */
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
+.card-text {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
