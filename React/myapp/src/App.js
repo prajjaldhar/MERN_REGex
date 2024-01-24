@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import Page1 from "./Page1";
 import NavBar from "./NavBar";
 import CardImage from "./CardImage";
 import ParentComponent from "./ParentComponent";
 import AComponent from "./AComponent";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./About";
 // import imagedata from "./imagedata";
 
 // const ncard = (val) => {
@@ -51,7 +54,12 @@ function App() {
     //   </div>
     // </div>
     // <ParentComponent />
-    <AComponent />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Page1 />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

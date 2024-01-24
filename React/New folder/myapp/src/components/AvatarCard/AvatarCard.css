@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    --primary-color: #e86471;
+    --primary-color-dark: #c95762;
+    --text-dark: #100629;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --border-radius: 2rem;
+}
+
+
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__header {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    color: var(--text-dark);
+}
+
+img {
+    display: flex;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+.swiper {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.swiper-slide {
+    max-width: 300px;
+}
+
+.customer__card {
+    position: relative;
+    isolation: isolate;
+}
+
+.customer__image {
+    border-radius: var(--border-radius);
+}
+
+.customer__user {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 60px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.customer__card__content {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1.25rem;
+}

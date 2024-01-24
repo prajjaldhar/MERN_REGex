@@ -1,0 +1,55 @@
+.main-container {
+    margin-top: 50px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.main-leftside {
+    width: 50%;
+    padding: 8rem;
+}
+
+.main-l-text {
+    width: 450px;
+}
+
+.main-l-text h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1em;
+}
+
+.main-l-text p {
+    position: relative;
+    top: -20px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.main-l-img-container {
+    display: flex;
+    max-width: 200px;
+    gap: 1em;
+    position: relative;
+    top: -40px;
+}
+
+.main-l-img {
+    position: relative;
+    top: 28px;
+
+}
+
+.main-l-img img {
+    /* aspect-ratio: 3/2; */
+    width: 150px;
+    border-radius: 6px;
+    /* object-fit: contain;
+    mix-blend-mode: color-burn; */
+}
+
+.main-rightside {
+    position: relative;
+    right: 10rem;
+    top: -2rem;
+}

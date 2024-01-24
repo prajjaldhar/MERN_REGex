@@ -1,0 +1,232 @@
+.nav-container {
+    max-width: 4000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #a701fa;
+    color: #fff;
+    height: 20vh;
+
+}
+
+.nav-logo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.additional-content {
+    position: absolute;
+    left: 45%;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu-item {
+    font-size: 3.5rem;
+}
+
+.nav-menu-item a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-menu-item a:hover {
+    color: #ffd700;
+    /* Change the color on hover as per your preference */
+}
+
+@media(max-width: 2560px) {
+    .nav-container {
+        min-width: 1536px;
+        background-color: rgb(21, 255, 0);
+    }
+}
+
+@media(max-width:1536px) {
+    .nav-container {
+        min-width: 1280px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(218, 114, 23);
+        color: #fff;
+        height: 10vh;
+
+    }
+
+    .nav-logo {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .additional-content {
+        position: absolute;
+        left: 45%;
+    }
+
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-menu-item {
+        font-size: 1.5rem;
+    }
+
+    .nav-menu-item a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .nav-menu-item a:hover {
+        color: #ffd700;
+        /* Change the color on hover as per your preference */
+    }
+}
+
+@media(max-width:1280px) {
+    .nav-container {
+        min-width: 1024px;
+        background-color: rgb(0, 42, 255);
+    }
+
+    .nav-logo {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+}
+
+@media(max-width:1024px) {
+    .nav-container {
+        min-width: 768px;
+        background-color: rgb(2, 44, 31);
+    }
+}
+
+@media(max-width:768px) {
+    .nav-container {
+        min-width: 648px;
+        background-color: rgb(255, 0, 115);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100vh;
+        left: 50%;
+    }
+
+    .nav-logo {
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        top: 5%;
+        right: 20%;
+    }
+
+    .additional-content {
+        position: absolute;
+        top: 25%;
+        left: 27%;
+    }
+
+    .nav-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        line-height: 6rem;
+    }
+
+    .nav-menu-item {
+        font-size: 1.3rem;
+    }
+
+    .nav-menu-item a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .nav-menu-item a:hover {
+        color: #ffd700;
+        /* Change the color on hover as per your preference */
+    }
+
+}
+
+@media(max-width:648px) {
+    .nav-container {
+        min-width: 475px;
+        background-color: rgb(71, 5, 93);
+    }
+
+    .nav-menu-item {
+        font-size: 1rem;
+    }
+
+    .nav-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        line-height: 4rem;
+    }
+}
+
+@media(max-width:475px) {
+    .nav-container {
+        width: 100%;
+        background-color: rgb(255, 0, 0);
+    }
+
+    .nav-logo {
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        top: 4%;
+        right: 28%;
+    }
+
+    .additional-content {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+
+    .nav-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        line-height: 4rem;
+    }
+
+    .nav-menu-item {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu-item a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .nav-menu-item a:hover {
+        color: #ffd700;
+        /* Change the color on hover as per your preference */
+    }
+
+}

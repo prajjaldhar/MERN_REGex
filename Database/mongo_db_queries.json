@@ -1,0 +1,63 @@
+use database
+
+show dbs
+
+
+db.createCollection('mycollection')
+
+db.mycollection.drop()
+show collections
+
+db.dropDatabase()
+
+files adding command
+
+db.BatchB.insertOne({
+    name:'jayPrakash',
+    age:'16',
+    rollno:'3256499',
+    city:"Darjeeling",
+    phoneno:"21097012612",
+    Blood_Group:"Z-"
+    Gender:"Can not determine"
+}
+)
+
+db.BatchB.insertMany([{
+    name:'jayala Prakash',
+    age:'16',
+    rollno:'3256499',
+    city:"Darjeeling",
+    phoneno:"21097012612",
+    Blood_Group:"Z-",
+    Gender:"Can not determine"
+},{
+    name:'Ramulal Prakash',
+    age:'61',
+    rollno:'34644',
+    city:"Darjeeling",
+    phoneno:"210972612",
+    Blood_Group:"Z+",
+    Gender:"Can determine"
+}])
+
+db.electronics.find(
+{   
+    $and:[  {'price':  {$gt:900} },   { 'rating':  {$gt:4}  }  ]
+    
+}
+
+)
+
+db.electronics.aggregate([{$group:{_id:null,avgPrice:{$avg:"price"}}}])
+
+db.electronics.aggregate([{$group:{_id:$category,totalStocks:{$sum:"$stocks"}}}])
+
+db.electronics.aggregate([
+    {$group:{_id:"$category",totalStocks:{$sum:"$stock"}}},{$sort:{totalStocks:-1}},
+    {$limit:1}
+])
+
+db.electronics.aggregate([
+    {$group:{_id:"$category",count:{$sum:1}}}
+])

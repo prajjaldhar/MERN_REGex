@@ -1,0 +1,15 @@
+/* NoteList.css */
+
+.note-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.note-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* ... */

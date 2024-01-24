@@ -1,0 +1,104 @@
+.card-container {
+    max-width: 4000px;
+}
+
+.card {
+    margin-top: 50px;
+    width: 400px;
+    height: 600px;
+    background-color: rgb(57, 4, 57);
+    position: relative;
+    left: 100%;
+    border-radius: 50px;
+}
+
+.i1 img {
+    width: 25%;
+    height: 30%;
+    aspect-ratio: 2/3;
+    position: absolute;
+    left: -50px;
+    top: -20px;
+    rotate: -60deg;
+}
+
+.i2 img {
+    width: 20%;
+    height: 20%;
+    aspect-ratio: 2/3;
+    position: absolute;
+    top: -46px;
+    right: -20px;
+}
+
+.i3 img {
+    width: 100%;
+    height: 70%;
+    aspect-ratio: 2/3;
+    position: absolute;
+    left: -11px;
+    top: 80px;
+}
+
+.i4 img {
+    width: 100%;
+    height: 50%;
+    aspect-ratio: 2/3;
+    position: relative;
+    left: 50%;
+}
+
+
+@media(max-width: 2560px) {
+    .card-container {
+        min-width: 1536px;
+    }
+
+}
+
+
+@media(max-width:1536px) {
+    .card-container {
+        min-width: 1280px;
+    }
+
+    .card {
+        margin-top: 50px;
+        width: 400px;
+        height: 600px;
+        background-color: rgb(57, 4, 57);
+        position: relative;
+        left: 25%;
+        border-radius: 50px;
+    }
+}
+
+@media(max-width:1280px) {
+    .card-container {
+        min-width: 1024px;
+    }
+}
+
+@media(max-width:1024px) {
+    .card-container {
+        min-width: 768px;
+    }
+}
+
+@media(max-width:768px) {
+    .card-container {
+        min-width: 648px;
+    }
+}
+
+@media(max-width:648px) {
+    .card-container {
+        min-width: 475px;
+    }
+}
+
+@media(max-width:475px) {
+    .card-container {
+        width: 100%;
+    }
+}

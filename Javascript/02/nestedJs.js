@@ -1,4 +1,4 @@
-goodbye();
+goodbye();//calling  invocation 
 area();
 
 function area() {

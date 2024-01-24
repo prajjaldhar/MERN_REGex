@@ -1,7 +1,12 @@
-var PI = 3.14;
-function examplevar() {
-  console.log(PI);
+function example() {
+  let x = 10;
+  if (true) {
+    let y = 20;
+  }
+  console.log(x);
+  console.log(y);
 }
-examplevar();
 
-console.log(PI);
+example();
+// console.log(x);
+// console.log(y);

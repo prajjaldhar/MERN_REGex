@@ -11,7 +11,7 @@ function makedough(allo, callback) {
     const dough = allo + "🍩";
     console.log("dough is ready and here is the raw dough", dough);
     callback(dough);
-  }, 10000);
+  }, 1000);
 }
 
 function makeAlloKulcha(allo, dough, callback) {
@@ -19,13 +19,13 @@ function makeAlloKulcha(allo, dough, callback) {
     const kulcha = allo + dough + "🥪";
     console.log("kulcha is ready", kulcha);
     callback(kulcha);
-  }, 15000);
+  }, 2500);
 }
 
 getallo((allo) => {
   makedough(allo, (dough) => {
     makeAlloKulcha(allo, dough, (kulcha) => {
-      console.log("Kuch is Served");
+      console.log("Kulcha is Served");
     });
   });
 });

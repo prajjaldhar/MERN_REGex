@@ -1,0 +1,36 @@
+.menu-container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    background-color: rgba(243, 126, 142, 0.836);
+    padding: 15px;
+    border-radius: 5rem;
+    width: 100px;
+    position: fixed;
+    top: 2em;
+    left: 8em;
+    gap: 1em;
+}
+
+.menu-icon {
+    position: relative;
+    left: 5px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-txt {
+    font-weight: 800;
+    color: white;
+    position: relative;
+    top: -2px;
+}

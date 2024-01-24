@@ -1,17 +1,15 @@
-const apiKey = "your api key";
+const apiKey = "0a88833b630c6eef22b68f28747b5750";
+const url = "https://jsonplaceholder.typicode.com/todos";
 
-async function fetchData(India) {
+async function fetchData() {
   try {
     const response = await fetch(url);
     const data = await response.json();
 
-    const temperature = data.min.temp;
-    const weatherDesc = data.weather[0].description;
-
-    console.log("hjfjjf");
+    console.log(data);
   } catch (error) {
     console.log("Error:", error);
   }
 }
 
-fetchData(India);
+fetchData();

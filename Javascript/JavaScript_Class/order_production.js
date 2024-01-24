@@ -34,18 +34,19 @@ const productDesc = (callback) => {
 };
 
 console.log("Order is now going to take");
-placeorder(()=>{
-  console.log('pass to production');
-  startProduction(()=>{
-    console.log('passing to id');
-    printID(()=>{
-      console.log('pass to product name');
-      productName(()=>{
-        console.log('pass to product desc');
-        productDesc(()=>{
-          console.log('All task done');
-        })
-      })
-    })
-  })
-})
+placeorder(() => {
+  console.log("pass to production");
+  startProduction(() => {
+    console.log("passing to id");
+    printID(() => {
+      console.log("pass to product name");
+      productName(() => {
+        console.log("pass to product desc");
+        productDesc(() => {
+          console.log("All task done");
+        });
+      });
+    });
+  });
+});
+console.log("Hello I am out of loop");
